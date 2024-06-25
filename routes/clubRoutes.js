@@ -72,7 +72,7 @@ router.delete('/clubs/:clubId/remove-player/:playerId', async (req, res) => {
     try {
         const { clubId, playerId } = req.params;
 
-        
+
         // Check if clubId and playerId are valid ObjectId
         if (!mongoose.Types.ObjectId.isValid(clubId) || !mongoose.Types.ObjectId.isValid(playerId)) {
             return res.status(400).json({ message: 'Invalid clubId or playerId' });
