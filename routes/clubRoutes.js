@@ -70,7 +70,7 @@ router.get('/clubs', async (req, res) => {
 
 router.delete('/clubs/:clubId/remove-player/:playerId', async (req, res) => {
     try {
-        const { clubId, playerId } = req.params;
+        const { clubId, playerId } = req.params; 
 
 
         // Check if clubId and playerId are valid ObjectId
